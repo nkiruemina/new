@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <title>Voter Education</title>
+	<!-- Bootstrap core CSS -->
+	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+	<!-- Time Picker core CSS -->
+	<link href="css/vendor/jquery.timepicker.css" rel="stylesheet">
+	<link href="css/vendor/bootstrap-datepicker.css" rel="stylesheet">
+	<!-- Sweet Alerts -->
+	<link href="js/vendor/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+	<!-- Fonts styles -->
+	<link href="css/fonts.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/app.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+    	<div class="app-holder pall-0" style="margin-bottom:50px;">
+			<div class="text-center mb-20"><img src="img/bg.png" style="width:120px; height:120px;" /></div>
+			<form class="no-submit getstarted-form">     
+                <h3 class="text-center mb-30 form-app-heading" style="color:#333;">Complete Form</h3>
+                <div class="col-md-12 no-float">
+                  <div class="form-group">
+                    <label for="form_questionnaire_name">Field Agent Name</label>
+                    <input type="text" class="form-control" id="form_questionnaire_name" autocomplete="off">
+                  </div>
+                 </div>
+                  <div class="col-md-12 no-float">
+                  <div class="form-group">
+                    <label for="form_questionnaire_gender">Gender</label>
+                    <select class="form-control" id="form_questionnaire_gender" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+                      <option value="0">Please select Response</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                  </div>
+                 </div>
+
+                 <div class="col-md-12 no-float">
+            <h4><strong>INTERVIEWER'S INFORMATION ABOUT LOCATION</strong></h4>
+           </div>
+           <div class="col-md-12 no-float">
+            <div class="form-group">
+              <label for="form_questionnaire_community">Community</label>
+              <input type="text" class="form-control" id="form_questionnaire_community" autocomplete="off">
+            </div>
+           </div>
+           <div class="col-md-12 no-float">
+            <div class="form-group">
+              <label for="form_questionnaire_senatorial">Senatorial District</label>
+              <input type="text" class="form-control" id="form_questionnaire_senatorial" autocomplete="off">
+            </div>
+           </div>
+
+                  <div class="col-md-12 no-float">
+                  <div class="form-group">
+                    <label for="form_questionnaire_lga">What LGA are you covering?</label>
+                    <select class="form-control" id="form_questionnaire_lga" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+                      <option value="0">Please select Response</option>
+                      <option value="Ado Ekiti">Ado Ekiti</option>
+                        <option value="Aiyekire">Aiyekire</option>
+                        <option value="Efon">Efon</option>
+                        <option value="Ekiti East">Ekiti East</option>
+                        <option value="Ejiti South West">Ejiti South West</option>
+                        <option value="Ado-Ekiti">Ado-Ekiti</option>
+                        <option value="Ekiti West">Ekiti West</option>
+                        <option value="Emure">Emure</option>
+                        <option value="Ido-Osi">Ido-Osi</option>
+                        <option value="Ijero">Ijero</option>
+                        <option value="Ikere">Ikere</option>
+                        <option value="Ikole">Ikole</option>
+                        <option value="Ilejemeje">Ilejemeje</option>
+                        <option value="Irepodun/Ifelodun">Irepodun/Ifelodun</option>
+                        <option value="Ise/Orun">Ise/Orun</option>
+                        <option value="Moba">Moba</option>
+                        <option value="Oye">Oye</option>
+                    </select>
+                  </div>
+                 </div>
+					       <div class="col-md-12 no-float">
+                    <div class="form-group">
+                        <label for="form_questionnaire_1">Has voter education campaign started in your LGA?</label>
+                        <select class="form-control" id="form_questionnaire_1" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+                          <option value="0">Please select Response</option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                    </div>
+                 </div>
+                 <div class="col-md-12 no-float">
+                    <div class="form-group">
+                        <label for="form_questionnaire_2">Is the voter education sensitive about, and accessible to all citizens?</label>
+                        <select class="form-control" id="form_questionnaire_2" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+                          <option value="0">Please select Response</option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                    </div>
+                 </div>
+                 <div class="col-md-12 no-float">
+                    <div class="form-group">
+                        <label for="form_questionnaire_3">How will you rate the level of voter understanding of the voting procedures in your LGA?</label>
+                        <select class="form-control" id="form_questionnaire_3" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+                          <option value="0">Please select Response</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                    </div>
+                 </div>
+                 <div class="col-md-12 no-float">
+                    <div class="form-group">
+                        <label for="form_questionnaire_4">Through which medium are voter education information dissemination in your LGA?</label>
+                        <select class="form-control" id="form_questionnaire_4" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+                          <option value="0">Please select Response</option>
+                          <option value="TV">TV</option>
+                          <option value="Radio">Radio</option>
+                          <option value="Church">Church</option>
+                          <option value="Mosque">Mosque</option>
+                          <option value="Social Media">Social Media</option>
+                          <option value="Posters">Posters</option>
+                          <option value="Others">Others </option>
+                        </select>
+                    </div>
+                    <div class="form-group question_4_b" style="display:none;">
+                        <label for="form_questionnaire_4_b">Kindly explain</label>
+                        <input type="text" class="form-control" id="form_questionnaire_4_b" value="n/a">
+                    </div>
+                 </div>
+                 <div class="col-md-12 no-float">
+                    <div class="form-group">
+                        <label for="form_questionnaire_5">Which medium was more helpful?</label>
+                        <input type="text" class="form-control" id="form_questionnaire_5">
+                    </div>
+                 </div>
+                 <div class="col-md-12 no-float">
+                    <div class="form-group">
+                        <label for="form_questionnaire_6">Are you satisfied with the content and level of information dissemination?</label>
+                        <select class="form-control" id="form_questionnaire_6" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+                          <option value="0">Please select Response</option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                    </div>
+                 </div>
+				 <!-- Hidden fields -->
+				 <input type="hidden" id="form_id" value="6">
+				 
+
+                 <!-- SUBMIT BTN HOLDER -->
+                 <div class="col-md-12 no-padding-left">
+                    <a id="form_btn_submit_6" class="btn btn-lg btn-success om-btn-inverse btn-block loading-button mb-20"><span class='default-state'>Submit Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+					<a class="btn btn-lg btn-default btn-block loading-button btn-nw"><span class='default-state'>Save Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+                    <hr>
+                    <a href="home.html" class="btn btn-lg btn-warning btn-block mb-20">Home</a>
+                 </div>
+
+            </form>
+      	</div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+	<!-- JS TimePicker -->
+	<script type="text/javascript" src="js/vendor/jquery.timepicker.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap-datepicker.js"></script>
+	<!-- Sweet Alerts -->
+	<script type="text/javascript" src="js/vendor/sweet-alert/sweet-alert.min.js"></script>
+	<!-- Dashboard Engine Script -->
+	<script type="text/javascript" src="js/engine.app.js"></script>
+	<script type="text/javascript">
+		jQuery(function() {
+			jQuery('#getstarted_time').timepicker({
+				'step': 15,
+				'minTime': '6:00am',
+				'maxTime': '10:30pm'
+			});
+		});
+	</script>
+  </body>
+</html>

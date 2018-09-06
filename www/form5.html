@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <title>Pre-Election Instrument for Experts</title>
+	<!-- Bootstrap core CSS -->
+	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+	<!-- Time Picker core CSS -->
+	<link href="css/vendor/jquery.timepicker.css" rel="stylesheet">
+	<link href="css/vendor/bootstrap-datepicker.css" rel="stylesheet">
+	<!-- Sweet Alerts -->
+	<link href="js/vendor/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+	<!-- Fonts styles -->
+	<link href="css/fonts.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/app.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+    	<div class="app-holder pall-0" style="margin-bottom:50px;">
+
+			<form class="no-submit getstarted-form">
+                <h3 class="text-center mb-30 form-app-heading" style="color:#333;">Pre-Election instrument for Experts - Section 2</h3>
+
+				<!-- Form Sections 1 of 2 -->
+				<div class="form-sections" id="section1">
+					<div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_name">Field Agent Name</label>
+							<input type="text" class="form-control" id="form_questionnaire_name" autocomplete="off">
+						</div>
+					 </div>
+					  <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_gender">Gender</label>
+							<select class="form-control" id="form_questionnaire_gender" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please select Response</option>
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+						</div>
+					 </div>
+
+					 <div class="col-md-12 no-float">
+						<h4><strong>INTERVIEWER'S INFORMATION ABOUT LOCATION</strong></h4>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_community">Community</label>
+							<input type="text" class="form-control" id="form_questionnaire_community" autocomplete="off">
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_senatorial">Senatorial District</label>
+							<input type="text" class="form-control" id="form_questionnaire_senatorial" autocomplete="off">
+						</div>
+					 </div>
+
+
+					  <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_lga">What LGA are you covering?</label>
+							<select class="form-control" id="form_questionnaire_lga" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please select Response</option>
+								<option value="Ayedaade">Ayedaade</option>
+    							<option value="Aiyedire">Aiyedire</option>
+    							<option value="Atakumosa West">Atakumosa West</option>
+    							<option value="Atakumosa East">Atakumosa East</option>
+    							<option value="Boluwaduro">Boluwaduro</option>
+    							<option value="Boripe">Boripe</option>
+    							<option value="Ede North">Ede North</option>
+    							<option value="Ede South">Ede South</option>
+    							<option value="Egbedore">Egbedore</option>
+    							<option value="Ejigbo">Ejigbo</option>
+    							<option value="Ifedayo">Ifedayo</option>
+    							<option value="Ifelodun">Ifelodun</option>
+    							<option value="Irepodun">Irepodun</option>
+    							<option value="Iwo">Iwo</option>
+    							<option value="Isokan">Isokan</option>
+    							<option value="Ife South">Ife South</option>
+    							<option value="Ife East">Ife East</option>
+                  <option value="Ife North">Ife North</option>
+      							<option value="Ife Central">Ife Central</option>
+      							<option value="Ila">Ila</option>
+      							<option value="Irewole">Irewole</option>
+      							<option value="Ilesa East">Ilesa East</option>
+      							<option value="Ilesa West">Ilesa West</option>
+      							<option value="Obokun">Obokun</option>
+      							<option value="Orolu">Orolu</option>
+      							<option value="Oriade">Oriade</option>
+      							<option value="Odo Otin">Odo Otin</option>
+      							<option value="Olaoluwa">Olaoluwa</option>
+      							<option value="Olorunda">Olorunda</option>
+      							<option value="Osogbo">Osogbo</option>
+							</select>
+						</div>
+					 </div>
+					<div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_1">Do you think that geographical terrain of this area is a factor that could lead to electoral violence?</label>
+							<select class="form-control" id="form_questionnaire_1" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_1_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_1_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_2">Do you think that non adherence to processes and procedures could lead to electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_2" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_2_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_2_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_3">Do you think that population displacement and population movement has been creating tension and violence in this area that may affect the election?</label>
+							<select class="form-control" id="form_questionnaire_3" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_3_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_3_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_4">Do you think that foreign interests (including foreign election observers) and interference could lead to electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_4" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_4_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_4_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_5">Do you think that funding of election is a factor that could trigger violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_5" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_5_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_5_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_6">Do you think that problems with payment of election workers is a factor to be considered in electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_6" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_6_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_6_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_7">Do you think problems associated with the recruitment of INEC ad-hoc staff could lead to electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_7" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_7_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_7_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_8">Do you think that power of incumbency has a role to play in causing electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_8" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_8_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_8_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_9">Do you agree that proliferation of small arms and light weapons can bring about violence during elections in this area?</label>
+							<select class="form-control" id="form_questionnaire_9" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_9_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_9_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_10">Do you agree that corruption among INEC officials contributes to electoral violence?</label>
+							<select class="form-control" id="form_questionnaire_10" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_10_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_10_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <!-- SUBMIT BTN HOLDER -->
+					 <div class="col-md-12 no-float">
+						<a href="#" class="btn btn-lg btn-primary btn-block btn-next-section mb-20" style="margin-top:40px;">Next Section (1 of 2)</a>
+						<!-- <a class="btn btn-lg btn-success om-btn-inverse btn-block btn-submit-forms loading-button mb-20 mt-20"><span class='default-state'>Submit Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a> -->
+						<a class="btn btn-lg btn-default btn-block loading-button btn-nw"><span class='default-state'>Save Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<hr>
+						<a href="home.html" class="btn btn-lg btn-warning btn-block mb-20">Home</a>
+					 </div>
+				</div>
+				<!-- //End -->
+
+				<!-- Form Sections 2 of 2 -->
+				<div class="form-sections" id="section2">
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_11">Do you think that reliability of election equipment could cause electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_11" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_11_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_11_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_12">Do you think that inadequate training and conduct of security agents is a factor that could lead to electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_12" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_12_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_12_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_13">Do you think that inadequate training and conduct of party agents is a factor that could lead to electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_13" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_13_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_13_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_14">Do you think that relationship between executives and legislature at federal and state levels contributes to electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_14" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_14_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_14_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_15">Do you think that relationship among the federal, state and local governments contributes to violence during the last election?</label>
+							<select class="form-control" id="form_questionnaire_15" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_15_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_15_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_16">Do you think that INEC’s information management is a factor that can contribute to electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_16" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_16_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_16_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_17">Do you agree that strong opposition can cause electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_17" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_17_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_17_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_18">Do you think that political interference with the work of INEC could lead to electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_18" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_18_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_18_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <br/>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_19">Do you think that the involvement of informal policing groups could lead to electoral violence in the area?</label>
+							<select class="form-control" id="form_questionnaire_19" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Likely">Very Likely</option>
+								<option value="Likely">Likely</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Unlikely">Unlikely</option>
+								<option value="Very Unlikely">Very Unlikely</option>
+							</select>
+						</div>
+						<div class="form-group">
+						    <label for="form_questionnaire_19_b">Kindly explain</label>
+						    <textarea class="form-control" id="form_questionnaire_19_b" rows="3"></textarea>
+						</div>
+					 </div>
+					 <!-- SUBMIT BTN HOLDER -->
+					 <div class="col-md-12 no-float">
+						<a id="form_btn_submit_5" class="btn btn-lg btn-success om-btn-inverse btn-block btn-submit-forms loading-button mb-20" style="margin-top:40px;"><span class='default-state'>Submit Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<a class="btn btn-lg btn-default btn-block loading-button btn-nw"><span class='default-state'>Save Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<hr>
+						<a href="#" class="btn btn-lg btn-warning btn-block mb-20 btn-forms-back">Back</a>
+					 </div>
+				</div>
+				<!-- //End -->
+
+				<!-- Hidden fields -->
+				<input type="hidden" id="form_id" value="5">
+				<input type="hidden" id="form_section_steps" value="1">
+
+            </form>
+      	</div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+	<!-- JS TimePicker -->
+	<script type="text/javascript" src="js/vendor/jquery.timepicker.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap-datepicker.js"></script>
+	<!-- Sweet Alerts -->
+	<script type="text/javascript" src="js/vendor/sweet-alert/sweet-alert.min.js"></script>
+	<!-- Dashboard Engine Script -->
+	<script type="text/javascript" src="js/engine.app.js"></script>
+  </body>
+</html>

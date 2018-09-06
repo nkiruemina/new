@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <title>Pre-Election Questionnaire for General Public</title>
+	<!-- Bootstrap core CSS -->
+	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+	<!-- Time Picker core CSS -->
+	<link href="css/vendor/jquery.timepicker.css" rel="stylesheet">
+	<link href="css/vendor/bootstrap-datepicker.css" rel="stylesheet">
+	<!-- Sweet Alerts -->
+	<link href="js/vendor/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+	<!-- Fonts styles -->
+	<link href="css/fonts.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/app.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+    	<div class="app-holder pall-0" style="margin-bottom:50px;">
+
+			<form class="no-submit getstarted-form">
+                <h3 class="text-center mb-30 form-app-heading" style="color:#333;">Pre-Election Questionnaire for General Public</h3>
+
+				<!-- Form Sections 1 of 8 -->
+				<div class="form-sections" id="section1">
+					 <div class="col-md-12 no-float">
+						<h4 class="form-section-headings  mb-20  mt-20">General Questions (1 of 8)</h4>
+					 </div>
+					  <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_name">Field Agent Name</label>
+							<input type="text" class="form-control" id="form_questionnaire_name" autocomplete="off">
+						</div>
+					 </div>
+					  <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_gender">Gender</label>
+							<select class="form-control" id="form_questionnaire_gender" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please select Response</option>
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+						</div>
+					 </div>
+
+					 <div class="col-md-12 no-float">
+						<h4><strong>INTERVIEWER'S INFORMATION ABOUT LOCATION</strong></h4>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_community">Community</label>
+							<input type="text" class="form-control" id="form_questionnaire_community" autocomplete="off">
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_senatorial">Senatorial District</label>
+							<input type="text" class="form-control" id="form_questionnaire_senatorial" autocomplete="off">
+						</div>
+					 </div>
+
+					  <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_lga">What LGA are you covering?</label>
+							<select class="form-control" id="form_questionnaire_lga" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please select Response</option>
+                <option value="Ayedaade">Ayedaade</option>
+    							<option value="Aiyedire">Aiyedire</option>
+    							<option value="Atakumosa West">Atakumosa West</option>
+    							<option value="Atakumosa East">Atakumosa East</option>
+    							<option value="Boluwaduro">Boluwaduro</option>
+    							<option value="Boripe">Boripe</option>
+    							<option value="Ede North">Ede North</option>
+    							<option value="Ede South">Ede South</option>
+    							<option value="Egbedore">Egbedore</option>
+    							<option value="Ejigbo">Ejigbo</option>
+    							<option value="Ifedayo">Ifedayo</option>
+    							<option value="Ifelodun">Ifelodun</option>
+    							<option value="Irepodun">Irepodun</option>
+    							<option value="Iwo">Iwo</option>
+    							<option value="Isokan">Isokan</option>
+    							<option value="Ife South">Ife South</option>
+    							<option value="Ife East">Ife East</option>
+                  <option value="Ife North">Ife North</option>
+      							<option value="Ife Central">Ife Central</option>
+      							<option value="Ila">Ila</option>
+      							<option value="Irewole">Irewole</option>
+      							<option value="Ilesa East">Ilesa East</option>
+      							<option value="Ilesa West">Ilesa West</option>
+      							<option value="Obokun">Obokun</option>
+      							<option value="Orolu">Orolu</option>
+      							<option value="Oriade">Oriade</option>
+      							<option value="Odo Otin">Odo Otin</option>
+      							<option value="Olaoluwa">Olaoluwa</option>
+      							<option value="Olorunda">Olorunda</option>
+      							<option value="Osogbo">Osogbo</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_1">Do you agree that election in this area will be peaceful?</label>
+							<select class="form-control" id="form_questionnaire_1" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_2">Do you agree that there has been a history of electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_2" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_3">Do you agree that hate speech can make election violent in this area?</label>
+							<select class="form-control" id="form_questionnaire_3" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_4">Do you agree that inter-ethnic/religious/communal conflicts can cause election violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_4" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_5">Do you agree that troublesome politicians, political parties, leaders and candidates could cause electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_5" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_6">Do you agree that attempt by illegal immigrants to participate in the electoral process could cause electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_6" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_7">Do you agree that citizens' disaffection with government could result to electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_7" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_8">Do you agree that widespread availability and use of hard drugs can bring about electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_8" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_10">Do you agree that confusing electoral laws could bring about electoral violence in this area?</label>
+							<select class="form-control" id="form_questionnaire_10" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <!-- SUBMIT BTN HOLDER -->
+					 <div class="col-md-12 no-float">
+						<a href="#" class="btn btn-lg btn-primary btn-block btn-next-section mb-20" style="margin-top:40px;">Next Section (1 of 8)</a>
+						<!-- <a class="btn btn-lg btn-success om-btn-inverse btn-block btn-submit-forms loading-button mb-20 mt-20"><span class='default-state'>Submit Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a> -->
+						<a class="btn btn-lg btn-default btn-block loading-button btn-nw"><span class='default-state'>Save Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<hr>
+						<a href="home.html" class="btn btn-lg btn-warning btn-block mb-20">Home</a>
+					 </div>
+				</div>
+				<!-- //End -->
+
+				<!-- Form Sections 2 of 8 -->
+				<div class="form-sections" id="section2">
+					 <div class="col-md-12 no-float">
+						<h4 class="form-section-headings  mb-20  mt-20">Do you agree that Exclusion and Discrimination of the following groups could cause electoral violence in this area? (2 of 8)</h4>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_12">Ethnic minorities</label>
+							<select class="form-control" id="form_questionnaire_12" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_13">Women</label>
+							<select class="form-control" id="form_questionnaire_13" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_14">The youth</label>
+							<select class="form-control" id="form_questionnaire_14" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_15">The elderly</label>
+							<select class="form-control" id="form_questionnaire_15" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_16">People living with disability</label>
+							<select class="form-control" id="form_questionnaire_16" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_17">Religious groups</label>
+							<select class="form-control" id="form_questionnaire_17" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_18">Sexuality</label>
+							<select class="form-control" id="form_questionnaire_18" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <!-- SUBMIT BTN HOLDER -->
+					 <div class="col-md-12 no-float">
+						<a href="#" class="btn btn-lg btn-primary btn-block btn-next-section mb-20" style="margin-top:40px;">Next Section (2 of 8)</a>
+						<!-- <a class="btn btn-lg btn-success om-btn-inverse btn-block btn-submit-forms loading-button mb-20 mt-20"><span class='default-state'>Submit Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a> -->
+						<a class="btn btn-lg btn-default btn-block loading-button btn-nw"><span class='default-state'>Save Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<hr>
+						<a href="#" class="btn btn-lg btn-warning btn-block mb-20 btn-forms-back">Back</a>
+					 </div>
+				</div>
+				<!-- //End -->
+
+				<!-- Form Sections 3 of 8 -->
+				<div class="form-sections" id="section3">
+					 <div class="col-md-12 no-float">
+						<h4 class="form-section-headings  mb-20  mt-20">Do you agree that the following actors constitute threats to peaceful elections in this area? (3 of 8)</h4>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_71">Pan-Ethnic Associations</label>
+							<select class="form-control" id="form_questionnaire_71" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_72">Civil Society Organisations (CSOs)</label>
+							<select class="form-control" id="form_questionnaire_72" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_19">Political parties (intra and inter party)</label>
+							<select class="form-control" id="form_questionnaire_19" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_20">INEC</label>
+							<select class="form-control" id="form_questionnaire_20" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_21">Security agencies</label>
+							<select class="form-control" id="form_questionnaire_21" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_22">The judiciary</label>
+							<select class="form-control" id="form_questionnaire_22" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_23">The media</label>
+							<select class="form-control" id="form_questionnaire_23" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_24">Traditional institutions</label>
+							<select class="form-control" id="form_questionnaire_24" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_25">Party thugs</label>
+							<select class="form-control" id="form_questionnaire_25" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_26">Vigilante groups</label>
+							<select class="form-control" id="form_questionnaire_26" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_27">Insurgents</label>
+							<select class="form-control" id="form_questionnaire_27" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_28">Religious extremists, cultists, and other armed groups</label>
+							<select class="form-control" id="form_questionnaire_28" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_29">Civil Society Organisations (CSOs)</label>
+							<select class="form-control" id="form_questionnaire_29" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <!-- SUBMIT BTN HOLDER -->
+					 <div class="col-md-12 no-float">
+						<a href="#" class="btn btn-lg btn-primary btn-block btn-next-section mb-20" style="margin-top:40px;">Next Section (3 of 8)</a>
+						<!-- <a class="btn btn-lg btn-success om-btn-inverse btn-block btn-submit-forms loading-button mb-20 mt-20"><span class='default-state'>Submit Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a> -->
+						<a class="btn btn-lg btn-default btn-block loading-button btn-nw"><span class='default-state'>Save Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<hr>
+						<a href="#" class="btn btn-lg btn-warning btn-block mb-20 btn-forms-back">Back</a>
+					 </div>
+				</div>
+				<!-- //End -->
+
+				<!-- Form Sections 4 of 8 -->
+				<div class="form-sections" id="section4">
+					 <div class="col-md-12 no-float">
+						<h4 class="form-section-headings  mb-20  mt-20">Do you agree that the following can cause violence during elections in this area? (4 of 8)</h4>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_30">Contentious party conventions/ primaries/meetings</label>
+							<select class="form-control" id="form_questionnaire_30" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_31">Disorderly party rallies, processions and campaigns</label>
+							<select class="form-control" id="form_questionnaire_31" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_32">Lack of respect for party rules</label>
+							<select class="form-control" id="form_questionnaire_32" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_33">Undue influence of money and godfathers</label>
+							<select class="form-control" id="form_questionnaire_33" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_34">Lack of transparency and disagreements over the selection of party officials and candidates</label>
+							<select class="form-control" id="form_questionnaire_34" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_35">Defections and cross carpeting from one party to another</label>
+							<select class="form-control" id="form_questionnaire_35" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_36">Lack of training and corruption of party agents</label>
+							<select class="form-control" id="form_questionnaire_36" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <!-- SUBMIT BTN HOLDER -->
+					 <div class="col-md-12 no-float">
+						<a href="#" class="btn btn-lg btn-primary btn-block btn-next-section mb-20" style="margin-top:40px;">Next Section (4 of 8)</a>
+						<!-- <a class="btn btn-lg btn-success om-btn-inverse btn-block btn-submit-forms loading-button mb-20 mt-20"><span class='default-state'>Submit Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a> -->
+						<a class="btn btn-lg btn-default btn-block loading-button btn-nw"><span class='default-state'>Save Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<hr>
+						<a href="#" class="btn btn-lg btn-warning btn-block mb-20 btn-forms-back">Back</a>
+					 </div>
+				</div>
+				<!-- //End -->
+
+				<!-- Form Sections 5 of 8 -->
+				<div class="form-sections" id="section5">
+					 <div class="col-md-12 no-float">
+						<h4 class="form-section-headings  mb-20  mt-20">Do you agree that the following can cause violence during elections in this area? (5 of 8)</h4>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_37">Problems associated with the continuous voter registration exercise</label>
+							<select class="form-control" id="form_questionnaire_37" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_38">Problems of underage registration</label>
+							<select class="form-control" id="form_questionnaire_38" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_39">Problems associated with the distribution of PVCs</label>
+							<select class="form-control" id="form_questionnaire_39" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_40">Poor voter education by INEC</label>
+							<select class="form-control" id="form_questionnaire_40" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_41">Movement and distribution of election materials</label>
+							<select class="form-control" id="form_questionnaire_41" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_42">Quality of election officials</label>
+							<select class="form-control" id="form_questionnaire_42" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_43">Substitution of trained electoral officials</label>
+							<select class="form-control" id="form_questionnaire_43" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_44">Problems associated with the distribution, location and adequacy of polling units and voting points</label>
+							<select class="form-control" id="form_questionnaire_44" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_45">Failure to prosecute electoral offenders</label>
+							<select class="form-control" id="form_questionnaire_45" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_46">Partiality of INEC officials</label>
+							<select class="form-control" id="form_questionnaire_46" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_47">Do you agree that INEC’s overall preparedness constitutes a threat to peaceful conduct of this election?</label>
+							<select class="form-control" id="form_questionnaire_47" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <!-- SUBMIT BTN HOLDER -->
+					 <div class="col-md-12 no-float">
+						<a href="#" class="btn btn-lg btn-primary btn-block btn-next-section mb-20" style="margin-top:40px;">Next Section (5 of 8)</a>
+						<!-- <a class="btn btn-lg btn-success om-btn-inverse btn-block btn-submit-forms loading-button mb-20 mt-20"><span class='default-state'>Submit Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a> -->
+						<a class="btn btn-lg btn-default btn-block loading-button btn-nw"><span class='default-state'>Save Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<hr>
+						<a href="#" class="btn btn-lg btn-warning btn-block mb-20 btn-forms-back">Back</a>
+					 </div>
+				</div>
+				<!-- //End -->
+
+				<!-- Form Sections 6 of 8 -->
+				<div class="form-sections" id="section6">
+					 <div class="col-md-12 no-float">
+						<h4 class="form-section-headings  mb-20  mt-20">Do you agree that the following can cause violence during elections in this area? (6 of 8)</h4>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_48">Partiality of security agents</label>
+							<select class="form-control" id="form_questionnaire_48" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_49">Inadequate or excessive presence of security agents</label>
+							<select class="form-control" id="form_questionnaire_49" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_50">Aggressive and excessive use of force</label>
+							<select class="form-control" id="form_questionnaire_50" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_51">Poor training and low professionalism of security agents</label>
+							<select class="form-control" id="form_questionnaire_51" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_52">Lack of synergy among security agents</label>
+							<select class="form-control" id="form_questionnaire_52" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_53">Lack of synergy between INEC and security agencies</label>
+							<select class="form-control" id="form_questionnaire_53" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_54">Low sense of safety among members of the public (banditry, kidnapping, assassination, etc)</label>
+							<select class="form-control" id="form_questionnaire_54" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_55">Problems associated with the deployment of security agents</label>
+							<select class="form-control" id="form_questionnaire_55" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_56">Problem associated with the welfare of security agents</label>
+							<select class="form-control" id="form_questionnaire_56" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <!-- SUBMIT BTN HOLDER -->
+					 <div class="col-md-12 no-float">
+						<a href="#" class="btn btn-lg btn-primary btn-block btn-next-section mb-20" style="margin-top:40px;">Next Section (6 of 8)</a>
+						<!-- <a class="btn btn-lg btn-success om-btn-inverse btn-block btn-submit-forms loading-button mb-20 mt-20"><span class='default-state'>Submit Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a> -->
+						<a class="btn btn-lg btn-default btn-block loading-button btn-nw"><span class='default-state'>Save Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<hr>
+						<a href="#" class="btn btn-lg btn-warning btn-block mb-20 btn-forms-back">Back</a>
+					 </div>
+				</div>
+				<!-- //End -->
+
+				<!-- Form Sections 7 of 8 -->
+				<div class="form-sections" id="section7">
+					 <div class="col-md-12 no-float">
+						<h4 class="form-section-headings  mb-20  mt-20">Do you agree that the following can cause violence during elections (7 of 8)</h4>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_57">Delays in the handling of pre-election cases</label>
+							<select class="form-control" id="form_questionnaire_57" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_58">Partiality of the judiciary</label>
+							<select class="form-control" id="form_questionnaire_58" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_59">Corruption and integrity of the judiciary</label>
+							<select class="form-control" id="form_questionnaire_59" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_60">Capacity of the judiciary (including inadequacy of judges)</label>
+							<select class="form-control" id="form_questionnaire_60" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_61">Confusing and contradictory court decisions</label>
+							<select class="form-control" id="form_questionnaire_61" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <!-- SUBMIT BTN HOLDER -->
+					 <div class="col-md-12 no-float">
+						<a href="#" class="btn btn-lg btn-primary btn-block btn-next-section mb-20" style="margin-top:40px;">Next Section (7 of 8)</a>
+						<!-- <a class="btn btn-lg btn-success om-btn-inverse btn-block btn-submit-forms loading-button mb-20 mt-20"><span class='default-state'>Submit Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a> -->
+						<a class="btn btn-lg btn-default btn-block loading-button btn-nw"><span class='default-state'>Save Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<hr>
+						<a href="#" class="btn btn-lg btn-warning btn-block mb-20 btn-forms-back">Back</a>
+					 </div>
+				</div>
+				<!-- //End -->
+
+				<!-- Form Sections 8 of 8 -->
+				<div class="form-sections" id="section8">
+					 <div class="col-md-12 no-float">
+						<h4 class="form-section-headings  mb-20  mt-20">Do you agree that the following can cause violence during elections in the area? (8 of 8)</h4>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_62">Misinformation of the public by the media</label>
+							<select class="form-control" id="form_questionnaire_62" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_63">Lack of professionalism</label>
+							<select class="form-control" id="form_questionnaire_63" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_64">Broadcast and publishing of hatred</label>
+							<select class="form-control" id="form_questionnaire_64" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_65">Unequal access to media</label>
+							<select class="form-control" id="form_questionnaire_65" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_66">Partisanship, favouritism and partiality</label>
+							<select class="form-control" id="form_questionnaire_66" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_67">Failure of regulatory bodies to ensure adherence to established rules by the media</label>
+							<select class="form-control" id="form_questionnaire_67" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_68">Sensationalism and provocation by the media</label>
+							<select class="form-control" id="form_questionnaire_68" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_69">Abuse of social media</label>
+							<select class="form-control" id="form_questionnaire_69" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Strongly Agree">Strongly Agree</option>
+								<option value="Agree">Agree</option>
+								<option value="Undecided">Undecided</option>
+								<option value="Disagree">Disagree</option>
+								<option value="Strongly Disagree">Strongly Disagree</option>
+							</select>
+						</div>
+					 </div>
+					 <div class="col-md-12 no-float">
+						<div class="form-group">
+							<label for="form_questionnaire_70">On the whole, how do you think that this election will go?</label>
+							<select class="form-control" id="form_questionnaire_70" style="-webkit-appearance:none;-moz-appearance:none;appearance:none;height:50px;padding:10px;font-size:18px;line-height:32px;">
+								<option value="0">Please Select Response</option>
+								<option value="Very Peaceful">Very Peaceful</option>
+								<option value="Peaceful">Peaceful</option>
+								<option value="Not Sure">Not Sure</option>
+								<option value="Violent">Violent</option>
+								<option value="Very Violent">Very Violent</option>
+							</select>
+						</div>
+					 </div>
+					 <!-- SUBMIT BTN HOLDER -->
+					 <div class="col-md-12 no-float">
+						<a id="form_btn_submit_3" class="btn btn-lg btn-success om-btn-inverse btn-block btn-submit-forms loading-button mb-20" style="margin-top:40px;"><span class='default-state'>Submit Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<a class="btn btn-lg btn-default btn-block loading-button btn-nw"><span class='default-state'>Save Form</span><div class='loading-state spinner'><div class='b1 se'></div><div class='b2 se'></div><div class='b3 se'></div><div class='b4 se'></div><div class='b5 se'></div><div class='b6 se'></div><div class='b7 se'></div><div class='b8 se'></div><div class='b9 se'></div><div class='b10 se'></div><div class='b11 se'></div><div class='b12 se'></div></div></a>
+						<hr>
+						<a href="#" class="btn btn-lg btn-warning btn-block mb-20 btn-forms-back">Back</a>
+					 </div>
+				</div>
+				<!-- //End -->
+
+				<!-- Hidden fields -->
+				<input type="hidden" id="form_id" value="3">
+				<input type="hidden" id="form_section_steps" value="1">
+
+            </form>
+      	</div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+	<!-- JS TimePicker -->
+	<script type="text/javascript" src="js/vendor/jquery.timepicker.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap-datepicker.js"></script>
+	<!-- Sweet Alerts -->
+	<script type="text/javascript" src="js/vendor/sweet-alert/sweet-alert.min.js"></script>
+	<!-- Dashboard Engine Script -->
+	<script type="text/javascript" src="js/engine.app.js"></script>
+  </body>
+</html>
